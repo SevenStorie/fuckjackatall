@@ -34,7 +34,7 @@ function restartjack {
 
 function build {
 	if [[ $SYNC == true ]]; then repo sync --force-sync -f --no-clone-bundle -c --no-tags -j4; fi
-	lunch lineage_${1}-userdebug
+	lunch xpe_${1}-userdebug
 	make -j2 bacon
 }
 
